@@ -41,6 +41,7 @@ export const PATCH = async (request: Request) => {
     const { userId, newUsername } = body;
 
     await connect();
+    
     if (!userId || !newUsername) {
       return new NextResponse(
         JSON.stringify({ message: "ID or new username not found" }),

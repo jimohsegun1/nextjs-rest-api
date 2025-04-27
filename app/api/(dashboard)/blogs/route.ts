@@ -150,7 +150,7 @@ export const POST = async (request: Request) => {
       { status: 200 }
     );
   } catch (error: any) {
-    return new NextResponse("Error in fetching blogs" + error.message, {
+    return new NextResponse("Error in creating blog" + error.message, {
       status: 500,
     });
   }
